@@ -21,12 +21,15 @@
         }
         
         public function getStates(){
-            return $this
+            return $this->$StateType;
         }
 
         /*********************************/
         /*              Setter           */
         /*********************************/
+        public function setType($type){
+            $this->$StateType = $type;
+        }
 
 
     }
